@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Administración</title>
+</head>
+<body class="body">
+    <header class="d-flex justify-content-between align-items-center p-3">
+        <div><img src="../img/logoblue.jpeg" alt="Logo" class="img-fluid"></div>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Ver la pagina</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Administración</h2>
+        <div class="mb-3">
+            <button class="btn btn-primary" onclick="showModal('add')">Agregar Administrador</button>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Matricula</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="adminTableBody">
+                <!-- Aquí se cargarán los datos de los administradores -->
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="text-center p-3">
+        <p>Desarrollado por María Belén</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

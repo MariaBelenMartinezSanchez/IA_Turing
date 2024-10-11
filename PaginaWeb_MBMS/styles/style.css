@@ -1,0 +1,364 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+/*--------------------------------
+Tipografía
+---------------------------------*/
+
+.body {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.6rem;
+    background-color: #9BC6EF; /* Azul */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.body2 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.6rem;
+    background-color: #CFC4F2; /* Morado */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+h1 {
+    font-size: 3rem; /* Tamaño base para pantallas grandes */
+    margin: 1rem 2; /* Espaciado */
+}
+
+h2 {
+    font-size: 3.5rem;
+    margin: 5rem 0;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+/* Responsividad para el h1 */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4rem; /* Tamaño para pantallas medianas */
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 3rem; /* Tamaño para pantallas pequeñas */
+    }
+}
+
+/*--------------------------------
+Estilos de color TEXTO
+---------------------------------*/
+.text-primary {
+    color: #327CE9 !important;
+}
+.text-primary2 {
+    color: #7D48E8 !important;
+}
+.text-secondary {
+    color: #CFC4F2 !important;
+}
+.text-secondary2 {
+    color: #9BC6EF !important;
+}
+.text-success {
+    color: #FAFBFB !important;
+}
+.text-danger {
+    color: #4858E8 !important;
+}
+
+/*--------------------------------
+Estilos de color BOTONES
+---------------------------------*/
+.btn-primary {
+    background-color: #45AEF2 !important;
+}
+.btn-success {
+    background-color: #847CEC !important;
+}
+
+/* ___________________BOTONES____________________________________________ */
+.btn-custom {
+    width: 100%;
+    margin-bottom: 1rem;
+    transition: transform 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #9BC6EF; /* Color de fondo al pasar el mouse */
+    transform: scale(1.05); /* Escalar botón al hacer hover */
+}
+
+/* _____________IMAGENES_______________________________________________________ */
+img {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    margin: 3rem;
+}
+
+/*--------------------------------
+Estilos de la Container
+---------------------------------*/
+.container {
+    background: rgba(255, 255, 255, 0.3); /* Efecto glass */
+    border-radius: 5rem; /* Bordes redondeados */
+    padding: 6rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2rem); /* Efecto de desenfoque */
+}
+
+
+
+/* ______________________________________________________________________ */
+.half-circle {
+    width: 10rem; /* Ajusta el tamaño según sea necesario */
+    height: 5rem;
+    background-color: black;
+    border-radius: 0 0 5rem 5rem; /* Forma de medio círculo */
+    margin: 0 auto; /* Centra el medio círculo */
+    position: relative;
+    top: -2rem; /* Ajusta la posición según sea necesario */
+}
+
+/*--------------------------------
+Figuras geometricas
+---------------------------------*/
+.medio-circulo{
+    width: 35rem;
+    height: 20rem;
+    background: #45AEF2;
+    border-radius:  0 0 100rem 100rem;
+    margin: auto;
+    position: absolute;
+    z-index: -1;
+    top: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+.medio-circulo2{
+    width: 35rem;
+    height: 20rem;
+    background: #847CEC;
+    border-radius:  0 0 100rem 100rem;
+    margin: auto;
+    position: absolute;
+    z-index: -1;
+    top: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+
+/* INDEX */
+/* _______________________HEADER________________________________________ */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -3rem;
+}
+.social-icons{
+    padding: 5rem;
+}
+a .bi{
+    color: #45AEF2;
+    padding-left: 1rem;
+}
+/* ____________NAV_____________________________________ */
+
+nav{
+    background-color: #7D48E8;
+}
+nav li :hover{
+    color: #CFC4F2;
+    transform: scale(1.09);
+}
+ul{
+    justify-content: center;
+}
+li a{
+    color: #FAFBFB;
+}
+
+.social-icons {
+    display: flex; /* Para alinear horizontalmente */
+    list-style: none; /* Para quitar el estilo de lista */
+    padding: 5; /* Para quitar el padding */
+}
+
+
+
+.social-icons li  {
+    padding: 10px; /* Espaciado interno para el ícono */
+    transition: 0.3s; /* Para efectos de hover */
+}
+
+.social-icons li svg path:hover  {
+    background-color: rgba(138, 234, 191, 0.824); /* Efecto hover (opcional) */
+}
+
+.icon {
+    font-size: 2rem;
+    color: #F9F1F1; /* Color del ícono */
+}
+
+.icon:hover {
+    color: #CFC4F2; /* Color del ícono al pasar el mouse */
+    transform: scale(1.05);
+}
+/* __________________________BOTONES DE CALCULADORA__________________________ */
+.botones {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+
+.botonescalcu {
+    display:flexbox; /* Cambia a flexbox */
+    margin-bottom: 3px; /* Espaciado entre el grupo de botones y el siguiente elemento */
+}
+
+
+button {
+    background-color: #b355d4;
+    color: white;
+    padding: 9px 1px; /* Mantener altura uniforme */
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1px;
+    margin: 0 6px; /* Espaciado entre botones */
+    min-width: 65px; /* Ancho mínimo para todos los botones */
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#resultado{
+    text-decoration: solid;
+    margin: 3px;
+    color: #FAFBFB;
+}
+input{
+    background-color: #FAFBFB;
+    color: #b355d4;
+}
+
+.card {
+    margin: 1rem; /* Espacio alrededor de las tarjetas */
+    max-width: 300px; /* Ancho máximo para las tarjetas */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Alinea el texto al centro */
+}
+.prof {
+    text-align: center;
+    margin: 20px;
+    background-color: #847CEC;
+    border-radius: 2rem;
+  }
+  .prof-img {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px;
+    border-radius: 50%; /* Hace la imagen circular */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+  }
+
+
+/* _________________________MAIN_____________________________ */
+h2{
+    background-color: #CFC4F2 ;
+    color: #FAFBFB;
+    text-align: center;
+}
+h5{
+    color:#FAFBFB ;
+}
+.card{
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1rem solid rgba(255, 255, 255, 0.1);
+}
+.card-body{
+    
+    background-color: #847CEC;
+}
+.card-title{
+    color: #CFC4F2 ;
+    font-size: 2rem;
+    text-align: center;
+}
+.card-text{
+    color:#FAFBFB ; 
+    font-size: 1rem;
+    
+}
+/* _______________________________Corporación_________________________________________________________________ */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .g-col-6 {
+    width: 50%;
+  }
+  .g-col-md-4 {
+    width: 33.33%;
+  }
+  .profile {
+    text-align: center;
+    margin: 20px;
+  }
+  .profile-img {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px;
+    border-radius: 50%; /* Hace la imagen circular */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+  }
+  h3 {
+    margin: 10px 0 5px;
+    color: #FAFBFB;
+    font-size: 2rem;
+  }
+  p {
+    margin: 0;
+    color: #CFC4F2;
+    font-size: 1.5rem;
+  }
+
+
+/* ______________________________________FOOTER_________________________________________________________ */
+footer{
+    background-color: #7D48E8;
+}
+h6{
+    color: #9BC6EF;
+    font-size: 1.2rem;
+}
+.list-inline{
+    text-align: center;
+    color: #F9F1F1;
+}
+.list-unstyled{
+    color: #CFC4F2;
+}
+.list-unstyled :hover {
+    color: #CFC4F2; /* Color del ícono al pasar el mouse */
+    transform: scale(1.05);
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <title>Login Usuario Turing IA</title>
+</head>
+<body class="body2">
+    <div class="container text-center col-md-7 position-relative">
+        <img src="../img/logoblue.jpeg" alt="Logo" />
+        <div class="medio-circulo2"></div>
+        <h1 class="text-primary2">Iniciar Sesión</h1>
+
+        <form action="../public/index.html" method="POST">
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Correo Electrónico de Empresa" required oninput="validateEmail(this)">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Contraseña" required>
+            </div>
+            <button type="submit" class="btn btn-lg btn-success btn-custom text-success">Iniciar Sesión</button>
+            <div>
+                <a href="./regiterUser.html"><button type="button" class="btn btn-lg btn-custom">¿No tienes una cuenta?</button></a>
+            </div>
+        </form>
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../scripts/opcion.js"></script>
+</body>
+</html>
